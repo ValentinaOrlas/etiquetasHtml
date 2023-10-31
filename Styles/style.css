@@ -1,0 +1,20 @@
+.moralejaP {
+    text-align: center;
+    
+}
+
+.titulo{
+    text-align: center;
+    color: pink;
+}
+
+.imagen{
+    display: block; /* Esto asegura que el margen automático funcione */
+    margin: 0 auto;
+    width: 300px;
+    height: 250px;
+}
+
+.figure{
+    
+}
