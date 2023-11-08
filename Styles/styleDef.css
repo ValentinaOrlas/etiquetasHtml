@@ -1,0 +1,76 @@
+.logo {
+    position: absolute;
+    top: 10px; /* Ajusta la posición vertical según tus necesidades */
+    left: 10px; /* Ajusta la posición horizontal según tus necesidades */
+  }
+  .logo img {
+    width: 30px; /* Ajusta el ancho del logotipo según tus necesidades */
+    height: auto; /* Mantiene la proporción original del logotipo */
+  }
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-image: url('/images/descarga.png'); 
+  background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-size: 200px 150px;
+    position: relative;
+}
+
+  .content {
+    position: relative; /* Asegura que los elementos posicionados se basen en este elemento */
+  }
+
+nav ul {
+  list-style: none; /* Elimina los puntos de la lista */
+  padding: 0; /* Elimina el relleno por defecto de la lista */
+  margin: 0; /* Elimina el margen por defecto de la lista */
+}
+nav {
+  text-align: right;
+  border-bottom: 2px solid #f78565; /* Establece el grosor y color del borde inferior */
+  padding: 10px 0;
+}
+nav li {
+  display: inline; /* Muestra los elementos en línea (horizontal) */
+  margin-right: 20px; /* Agrega un espacio entre los elementos */
+}
+nav a {
+  text-decoration: none;
+  color: black;
+}
+nav a:hover {
+    color: #e34f26; /* Color al pasar el cursor sobre el enlace */
+  }
+.titulo {
+  text-align: center;
+  margin-top: 20px;
+  color: #e34f26;
+}
+p{
+    text-align: center;
+}
+/* Ocultar el panel por defecto */
+.panel {
+  display: none;
+}
+
+/* Estilizar el encabezado */
+.accordion {
+  cursor: pointer;
+}
+.accordion:hover {
+    color: #e28065; 
+  }
+/* Estilo para la flecha */
+.arrow {
+  display: inline-block;
+  margin-left: 30px; /* Espacio entre el texto del subtítulo y la flecha */
+  transition: transform 0.3s;
+  font-size: 12px; /* Tamaño de la fuente más pequeño */
+}
+
+/* Estilo para la flecha cuando está abierta */
+.active .arrow {
+  transform: rotate(90deg);
+}
