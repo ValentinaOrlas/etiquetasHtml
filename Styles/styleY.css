@@ -7,28 +7,6 @@
     width: 30px; /* Ajusta el ancho del logotipo según tus necesidades */
     height: auto; /* Mantiene la proporción original del logotipo */
   }
-.moralejaP {
-    text-align: center;   
-}
-a{
-    text-decoration: none;
-    color: black;
-}
-a:hover{
-
-    color: pink
-}
-.titulo{
-    text-align: center;
-    color: rgb(255, 168, 183);
-}
-
-.imagen{
-    display: block; /* Esto asegura que el margen automático funcione */
-    margin: 0 auto;
-    width: 300px;
-    height: 250px;
-}
 nav ul {
     list-style: none; /* Elimina los puntos de la lista */
     padding: 0; /* Elimina el relleno por defecto de la lista */
@@ -50,8 +28,3 @@ nav ul {
   nav a:hover {
       color: rgb(255, 168, 183); /* Color al pasar el cursor sobre el enlace */
     }
-footer {
-    border: 2px solid rgb(255, 168, 183); /* Borde de 2 píxeles de ancho y tipo punteado, color */
-    padding: 20px;
-   
-}
