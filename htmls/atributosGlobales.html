@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .desplegable {
+    display: none;
+  }
+</style>
+</head>
+<body>
+
+<p>ATRIBUTOS GLOBALES EN HTML:</p>
+<p onclick="mostrarSignificado('palabra1')" style="cursor:pointer;">Accesskey</p>
+<div id="palabra1" class="desplegable">El atributo global accesskey provee un indicio para 
+    generar un atajo de teclado para el elemento actual . Este atributo consiste en una lista 
+    de caracteres separada por espacios (un único punto de código Unicode). El explorador 
+    usa el primero que existe en la distribución del teclado de la computadora .</div>
+
+<p onclick="mostrarSignificado('palabra2')" style="cursor:pointer;">Class</p>
+<div id="palabra2" class="desplegable">El atributo global class es una lista de las clases 
+    del elemento separada por espacios . Las clases permiten a CSS y Javascript seleccionar 
+    y acceder a elementos específicos a través de los selectores de clase o funciones como 
+    el método document.getElementsByClassName del DOM.</div>
+
+<p onclick="mostrarSignificado('palabra3')" style="cursor:pointer;">Contenteditable</p>
+<div id="palabra3" class="desplegable">El atributo global contenteditable es un atributo enumerado 
+    que indica si el elemento debe de ser editable por el usuario . Si es así, el explorador modifca 
+    su widget para permitir la edición . El atributo debe de tener alguno de los siguientes valores :<br>
+<br>
+    <u>True</u> o una string vacia , que indica que el elemento debe de ser editable .<br>
+<br>
+    <u>False</u> , que indica que el elemento no debe ser editable.<br>
+<br>
+    Si este atributo no se establece , el valor de default es heredado de su elemento padre .<br>
+<br> 
+    Este es un atributo enumerado y no uno booleano . Esto significa que el uso explicito de uno 
+    de los valores true , false o la cadena vacía es obligatorio y que una código como <label contenteditable>
+    Example Label</label> no esta permitido . El uso correcto es <label contenteditable="true">Example Label</label>.</div>
+
+<p onclick="mostrarSignificado('palabra4')" style="cursor:pointer;">dir</p>
+<div id="palabra4" class="desplegable">El atributo global dir es un atributo enumerado que indica la 
+    direccionalidad del texto de los elementos . Puede tener los siguientes valores :
+
+    <ul>
+        <li><mark>ltr</mark>, significa izquierda a derecha y es usado para los lenguajes que son escritos de izquierda a derecha ( como el Inglés ) .</li>
+        <li><mark>rtl</mark>, significa derecha a izquierda y es usado para los lenguajes que son escritos de la derecha a la izquierda (como el árabe ) .</li>
+        <li><mark>auto</mark>, permite al agente usuario decidir . Usa un algoritmo básico mientras parsea los caracteres dentro de un elemento hasta que 
+    encuentra un elemento con una direccionalidad fuerte , después aplica esa direccionalidad a todo el elemento .</li>
+    </ul>
+</div>
+<p onclick="mostrarSignificado('palabra5')" style="cursor:pointer;">Draggable</p>
+<div id="palabra5" class="desplegable">El atributo global draggable es un atributo enumerado 
+    que indica si el elemento puede ser arrastrado , usando 
+    el HTML Drag and Drop API . Puede tener los siguientes valores :
+<ul>
+    <u>true</u> , indica que el elemento puede ser arrastrado.
+    <br>
+    <u>false</u>, indica que el elemento no puede ser arrastrado .
+</ul>
+    Si este atriuto no se establece , su valor por default es auto , significando que el 
+    comportamiento debe de ser el definido por default en el explorador .</div>
+
+<p onclick="mostrarSignificado('palabra6')" style="cursor:pointer;">Hidden</p>
+<div id="palabra6" class="desplegable">El atributo global hidden es un atributo Booleano que indica 
+    que el elemento todavía no está , o ya no es relevante . Por ejemplo , puede ser usado para 
+    ocultar elelementos de la página que no pueden ser usados hasta que el proceso de login se haya 
+    completado . El explorador no dibujará dichos elementos .</div>
+
+<p onclick="mostrarSignificado('palabra7')" style="cursor:pointer;">id</p>
+<div id="palabra7" class="desplegable">El atributo global id define un identificador único (ID) el 
+    cual no debe repetirse en todo el documento. Su propósito es identificar el elemento al vincularlo 
+    (usando un identificador de fragmento), en scripts u hojas de estilo (con CSS).<br>
+
+    El valor de este atributo es una cadena de caracteres opaca: es decir, el autor del sitio no debe
+    usarlo para proporcionar información. De forma particular, en sentido semántico por ejemplo, no 
+    debe ser derivado de la misma cadena.</div>
+
+<p onclick="mostrarSignificado('palabra8')" style="cursor:pointer;">Lang</p>
+<div id="palabra8" class="desplegable">El atributo global lang participa en la definición del lenguaje 
+    del elemento , el lenguaje en que están escritos los elementos no editables o el lenguaje en el cual 
+    los elementos editables deberían de estar escritos . La etiqueta contiene un valor sencillo de entrada 
+    en el formato que define el documento tags para identificar lenguajes (BCP47) de la IETF . Si el contenido 
+    de la etiqueta es la cadena vacía , el lenguaje se establece como desconocido , si el contenido de la etiqueta 
+    no es válido respecto al documento BCP47 , se establece como inválido .<br>
+
+    Incluso si el atributo lang está establecido , puede que no se tome en cuenta , ya que el atributo 
+    xml:lang tiene prioridad . Leer el algoritmo para determinar el lenguaje de el contenido de un elemento
+     para ver como es determinado el lenguaje en todos los casos.</div>
+
+<p onclick="mostrarSignificado('palabra9')" style="cursor:pointer;">Spellcheck</p>
+<div id="palabra9" class="desplegable">El atributo global spellcheck es un atributo enumerado que define si 
+    el elemento debe de ser verificado por errores de deletreado. Puede tener los siguientes valores :<br>
+<ul>
+    <u>true</u>, que indica que elemento debe de ser checado para errores de deletreado si es posible.<br>
+    <u>false</u>, que indica que el elemento no debe de ser checado para errores de deletreado.
+</ul>
+    Si este atributo no está establecido , su valor por default es de tipo elemento y definido por el 
+    explorador . El valor por default puede der heredado , lo que significa que el contenido del elemento será 
+    checado para errores de deletreado solo si el ancestro más cercano tiene un estado de spellcheck con valor true.</div>
+
+<p onclick="mostrarSignificado('palabra10')" style="cursor:pointer;">Style</p>
+<div id="palabra10" class="desplegable">style - estilo. Es el elemento encargado de indicar la información de estilo.
+<ul>
+    Sus etiquetas son: (style) (ambas obligatorias). <br>
+    Está definido como: Elemento de cabecera. <br>
+    Crea una caja: No.
+    Puede contener: Declaraciones de estilo. <br>
+    Debe ser contenido por: Elementos head. <br>
+</ul>
+</div>
+
+<p onclick="mostrarSignificado('palabra11')" style="cursor:pointer;">Tabindex</p>
+<div id="palabra11" class="desplegable">El atributo global tabindex indica si su elemento puede ser enfocado, y si participa en la navegación secuencial del teclado (usualmente con la tecla Tab, de ahí el nombre). Acepta un entero como valor, con diferentes resultados que dependen de dicho valor:
+<ul>
+    <li>un valor negativo (usualmente tabindex="-1") significa que el elemento debe ser enfocado, pero no debe de ser accesible a través de la navegación secuencial del teclado. Es útil para crear widgets accesibles con JavaScript.</li>
+    <br>
+    <li>tabindex="0" significa que el elemento debe ser enfocado y ser accesible a través de la navegación secuencial del teclado, pero su orden relativo es definido por convención de la plataforma.</li>
+    <br>
+    <li>un valor positivo significa que debe poder recoger el foco y alcanzable a través de la navegación secuencial del teclado; su orden relativo es definido por el valor del atributo: la secuencia sigue el aumento del número de tabindex. Si varios elementos comparten el mismo tabindex, su orden relativo sigue la posición relativa en el documento.</li>
+    <br>
+    <li>Un elemento con valor 0, un valor inválido o sin valor de tabindex, debe de ser posicionado después de elementos con un tabindex postivo en el orden de navegación secuencial del teclado.</li>
+</ul>
+</div>
+
+<p onclick="mostrarSignificado('palabra12')" style="cursor:pointer;">Title</p>
+<div id="palabra12" class="desplegable">El elemento <mark>title</mark> <u>HTML</u> define el título del documento que se muestra en un <u>browser</u> la barra de título o la pestaña de una página. Solo contiene texto; las etiquetas dentro del elemento se ignoran.</div>
+
+<p onclick="mostrarSignificado('palabra13')" style="cursor:pointer;">Translate</p>
+<div id="palabra13" class="desplegable">El atributo global translate es un atributo enumerado que es usado para especificar si los valores del atributo de un elemento y los valores de sus nodos hijos de Texto serán traducidos cuando la página es localizada , o si se debe de dejarlos sin cambio . Puede tener los siguientes valores :
+<ul>
+    Cadena vacía y "yes" , que indica que el elemento debe de ser traducido cuando la página es localizada .
+    <br>
+    "no", que indica que el elemento no debe de ser traducido .
+</ul>
+</div>
+
+<script>
+function mostrarSignificado(id) {
+  var x = document.getElementById(id);
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
+</body>
+
+</html>
