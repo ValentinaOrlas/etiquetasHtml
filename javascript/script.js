@@ -18,3 +18,5 @@ accordions.forEach(function(accordion) {
       }
     });
   });
+
+  /*no*/
