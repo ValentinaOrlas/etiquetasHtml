@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Sisben</title>
+    <link rel="stylesheet" type="text/css" href="styleSis.css">
+</head>
+<body>
+    <h1>NUEVA SOLICITUD</h1>
+
+  <form action="/procesar_formulario" method="post">
+    <!-- Campo de texto -->
+    <div class="seccion">
+    <label for="fecha">Fecha</label>
+    <br>
+    <input type="number" id="" name="dia" placeholder="Día" maxlength="2" >
+    <input type="text" id="" name="mes" placeholder="Mes" maxlength="10">
+    <input type="text" id="" name="año" placeholder="Año" maxlength="4">
+    <br>
+    <div>
+        <span class="municipio">Municipio</span>
+        <span class="departamento">Departamento</span>
+    </div>
+    <input type="text" id="" name="municipio" maxlength="20">
+    <input type="text" id="" name="departamento" maxlength="20">
+    <br><br>
+    </div>
+
+    <h2>DATOS DEL SOLICITANTE</h2>
+    <!-- Campo de texto -->
+    <div class="seccion">
+    <div>
+        <span class="nombre">Nombres:</span>
+        <span class="apellido">Apellidos:</span>
+        <span class="genero">Selecciona tu género:</span>
+    </div>
+    <input type="text" id="nombre" name="nombre" required>
+    <input type="text" id="apellido" name="apellido" required>
+    <label>
+      <input type="radio" name="genero" value="masculino"> Masculino
+    </label>
+    <label>
+      <input type="radio" name="genero" value="femenino"> Femenino
+    </label>
+    <div>
+        <span class="extranjero">Extranjero</span>
+        <span class="tipoDoc">Tipo de documento</span>
+        <span class="numero">Número de documento</span>
+        <span class="fechaN">Fecha de nacimiento</span>
+        <span class="fechaE">Fecha de expedición doc.</span>
+    </div>
+    <input type="radio" name="extranjero" value="extranjero"> 
+    <input type="text" list="lista" class="lista">
+    <datalist id="lista">
+        <option value="Cedula de ciudadania">
+        <option value="Documento de identidad">
+        <option value="cedula extranjera">
+    </datalist>
+    <input type="number" name="numero" id="" required maxlength="12">
+    <input type="number" id="" name="fechaN" placeholder="Día/Mes/Año" maxlength="10" class="fecha">
+    <input type="number" id="" name="fechaE" placeholder="Día/Mes/Año" maxlength="10" >
+    <br>
+    <div>
+        <span class="pais">Pais</span>
+        <span class="departamentos">Departamento</span>
+        <span class="municipios">Municipio</span>
+        <span class="email">Correo electronico</span>
+    </div>
+
+    <input type="text" id="pais" name="pais" required maxlength="20">
+    <input type="text" id="departamento" name="departamento" maxlength="20">
+    <input type="text" id="municipio" name="municipio" maxlength="20">
+    <input type="email" id="correo" name="correo" required maxlength="50">
+    <div>
+        <span class="direccion">Dirección de domicilio</span>
+        <span class="telefono">Telefono</span>
+    </div>
+    <input type="text" id="" name="direccion" required>
+    <input type="number" id="" name="telefono" required>
+    </div>
+    <h2>DETALLE DE LA SOLICITUD</h2>
+    <div class="seccion">
+    <label for="solicitud">TIPO DE SOLICITUD</label> 
+    <label for="tipo" class="tipo">Inclusión - modificación - retiro</label>
+    <input type="checkbox" name="solicitud" value="solicitud" >
+    <label for="encuesta" class="tipo">¿ENCUESTA NUEVA?</label>
+    <input type="checkbox" name="encuesta" value="encuesta" >
+    <br>
+    <br>
+    <label for="modificar">INFORMACIÓN A MODIFICAR</label>
+    <label for="id" class="id">identificación</label>
+    <input type="checkbox" name="id" value="id">
+    <label for="datos">Datos de la vivienda</label>
+    <input type="checkbox" name="datos" value="datos">
+    <label for="hogar">Datos del hogar</label>
+    <input type="checkbox" name="hogar" value="hogar">
+    <label for="persona">Datos de la persona</label>
+    <input type="checkbox" name="persona" value="persona">
+    </div>
+    <h2>PERSONAS DEL HOGAR SOLICITANTE</h2>
+
+    <table>
+        <thead>
+          <tr>
+            <th>Orden</th>
+            <th>1° Nombre</th>
+            <th>2° Nombre</th>
+            <th>1° Apellido</th>
+            <th>2° Apellido</th>
+            <th>Documento</th>
+            <th>Retiro</th>
+            <th>Inclusión</th>
+            <th>Modificación</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="orden">1</td>
+            <td><input type="text" maxlength="20"></td>
+            <td><input type="text" maxlength="20"></td>
+            <td><input type="text" maxlength="20"></td>
+            <td><input type="text" maxlength="20"></td>
+            <td><input type="number" maxlength="11"></td>
+            <td class="box"><input type="checkbox"></td>
+            <td class="box"><input type="checkbox"></td>
+            <td class="box"><input type="checkbox"></td>
+          </tr>
+          <tr>
+            <td class="orden">2</td>
+            <td><input type="text" maxlength="20"></td>
+            <td><input type="text" maxlength="20"></td>
+            <td><input type="text" maxlength="20"></td>
+            <td><input type="text" maxlength="20"></td>
+            <td><input type="number" maxlength="11"></td>
+            <td class="box"><input type="checkbox"></td>
+            <td class="box"><input type="checkbox"></td>
+            <td class="box"><input type="checkbox"></td>
+          </tr>
+          <tr>
+            <td class="orden">3</td>
+            <td><input type="text" maxlength="20"></td>
+            <td><input type="text" maxlength="20"></td>
+            <td><input type="text" maxlength="20"></td>
+            <td><input type="text" maxlength="20"></td>
+            <td><input type="number" maxlength="11"></td>
+            <td class="box"><input type="checkbox"></td>
+            <td class="box"><input type="checkbox"></td>
+            <td class="box"><input type="checkbox"></td>
+          </tr>
+        </tbody>
+      </table>
+    <label>
+      <input type="checkbox" name="suscripcion" value="si"> Suscribirse al boletín
+    </label>
+
+    <div>
+        <h3>AUTORIZACIÓN Y DECLARACIÓN DE LA PERSONA SOLICITANTE</h3>
+        <p class="parrafo">El DNP actuará como responsable del tratamiento de datos personales, de acuerdo con la política de tratamiento de datos personales de la entidad. La información registrada 
+            en el Sisbén y los datos personales serán utilizados para orientar las politicas sociales del Gobierno.
+             Declaro bajo la gravedad de juramento que la información suministrada es verdadera y se brinda de forma voluntaria, y autorizo a que sea verificada con otras fuentes 
+            de informacion, y que se actualice de forma automatica a traves del cruce con registros administrativos u otras fuentes que el DNP defina. Cualquier presunta falsedad 
+            indentificada a traves decruces con bases de datos generará la exclusion del Sisbén, independientemente de las accion legales a que haya lugar.
+             Autorizo que el resultado de la presente solicitud o en su defecto las observaciones que se formulen sean notificadas a la direccion de correo electronico señaladas 
+            en la seccion "Informante calificado del hogar".</p>
+        
+        <div class="permiso">
+            <label for="permiso">¿ESTA DE ACUERDO?:</label>
+            <label for="si">SI</label>
+            <input type="checkbox" id="si" name="SI">
+            <label for="no">NO</label>
+            <input type="checkbox" id="no" name="NO">
+        </div>
+    </div>
+    <div>
+    <span class="descripcion">▶</span>
+    </div>
+        <label for="descripcion">El solicitante se compromete a <br> 
+            que una vez superada la <br>
+            emergencia por el COVID-19 <br>
+            se presentará en la oficina <br>
+            del Sisbén a refrendar con <br>
+            su firma esta solicitud <br></label>
+<div class="fin">
+        <span class="firma">Firma del solicitante</span>
+        <span class="texto">Huella indice derecho</span>
+</div>
+    <!-- Botón de envío -->
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+</html>

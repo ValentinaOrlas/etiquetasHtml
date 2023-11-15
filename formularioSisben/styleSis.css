@@ -1,0 +1,83 @@
+.departamento, .apellido, .genero {
+    margin-left: 110px; /* Puedes ajustar el valor según tus necesidades */
+  }
+
+.tipoDoc, .numero, .fechaN, .fechaE {
+    margin-left: 50px;  
+}
+
+.lista {
+    margin-left: 90px;
+}
+
+.fecha, .telefono {
+    margin-left: 20px;
+}
+.departamentos {
+    margin-left: 150px;
+}
+
+.municipios, .email {
+    margin-left: 100px; 
+}
+
+.tipo, .encuesta, .id {
+    margin-left: 80px; 
+}
+
+.table {
+    
+    width: 40%;
+    
+  }
+
+  th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }
+
+  .orden {
+    text-align: center;
+  }
+
+  .box {
+    text-align:  center;
+  }
+
+  .descripcion {
+    
+    font-size: 40px; /* Tamaño de la fuente más pequeño */
+    margin-left: auto; /* Mueve el span hacia la derecha para centrarlo */
+    margin-right: auto; /* Mueve el span hacia la izquierda para centrarlo */
+  }
+  
+  .firma {
+    text-decoration: overline;
+    margin-right: 20px;
+  }
+
+
+
+
+  .parrafo, .permiso {
+    background-color: rgb(196, 201, 202); /* Color de fondo, puedes cambiarlo */
+    padding: 5px; /* Espaciado interno para mejorar la apariencia */
+  }
+
+  .seccion {
+    background-color: rgb(196, 201, 202); /* Color de fondo, puedes cambiarlo */
+    padding: 5px; /* Espaciado interno para mejorar la apariencia */
+    
+  }
+
+  .permiso, .fin {
+    text-align: right;
+  }
+
+  
+ 
