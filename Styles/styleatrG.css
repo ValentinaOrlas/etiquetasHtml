@@ -33,6 +33,10 @@ nav li {
   h1 {
     text-align: center;
   }
+  .desplegable {
+    display: none;
+  }
+  
   
 
   

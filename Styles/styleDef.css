@@ -74,3 +74,7 @@ p{
 .active .arrow {
   transform: rotate(90deg);
 }
+
+.firma {
+  text-decoration: overline;
+}
